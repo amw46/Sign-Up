@@ -4,27 +4,37 @@
 <head>
 	<title>Sign Up</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- bootstrap css -->
+
+
+	<link href="styles/signin.css" rel="stylesheet"> 
 </head>
 
 
 <body>
 
-<link href="styles/signin.css" rel="stylesheet">
+
+
 
 <div class="container">
-	<form class="form-horizontal">
-  		<div class="form-group">
-    			<label class="control-label col-sm-2" for="email">Email:</label>
-    			<div class="col-sm-10">
-      			<input type="email" class="form-control" id="email" placeholder="Enter email">
-    			</div>
-  		</div>
-  		<div class="form-group">
-    			<label class="control-label col-sm-2" for="pwd">Password:</label>
-    			<div class="col-sm-10">
-      			<input type="password" class="form-control" id="pwd" placeholder="Enter password">
-    			</div>
-  		</div>
+
+	<form class="form-signin">
+		<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+		<label for="inputFirst" class="sr-only">First Name</label>
+      		<input type="text" id="inputFirst" class="form-control" placeholder="First Name" required >
+
+		<label for="inputLast" class="sr-only">Last Name</label>
+      		<input type="text" id="inputLast" class="form-control" placeholder="Last Name" required >
+		
+
+		<label for="inputEmail" class="sr-only">Email address</label>
+      		<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+
+		<label for="inputPhone" class="sr-only">Phone Number</label>
+      		<input type="text" id="inputPhone" class="form-control" placeholder="Phone Number" required >
+
+
+
   		<div class="form-group">
     			<div class="col-sm-offset-2 col-sm-10">
       				<div class="checkbox">
