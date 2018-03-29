@@ -10,28 +10,55 @@
 </head>
 
 
-<body>
+<body class="text-center yellow">
 
 
 
 
-<div class="container">
+<div class="container gold padding">
 
 	<form class="form-signin">
+		<img class="mb-4" src="http://images.clipartpanda.com/clipart-star-RTA9RqzTL.png" alt="star" width="72" height="72">
 		<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
 
 		<label for="inputFirst" class="sr-only">First Name</label>
-      		<input type="text" id="inputFirst" class="form-control" placeholder="First Name" required >
+      		<input type="text" id="inputFirst" class="form-control" placeholder="First Name" required autofocus>
+
+		<br>
 
 		<label for="inputLast" class="sr-only">Last Name</label>
       		<input type="text" id="inputLast" class="form-control" placeholder="Last Name" required >
 		
+		<br>
 
 		<label for="inputEmail" class="sr-only">Email address</label>
-      		<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      		<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required >
+
+		<br>
+		
 
 		<label for="inputPhone" class="sr-only">Phone Number</label>
       		<input type="text" id="inputPhone" class="form-control" placeholder="Phone Number" required >
+		
+		<br>
+
+
+		<div class="form-group">
+		<label for="bday" class="text-left">Birthday:</label>
+		<input type="date">
+
+		</div>
+
+		<br>
+
+		<div class="form-group">
+		<label for="gender" class="text-left">Gender:</label>
+			<select>
+  				<option value="male">Male</option>
+  				<option value="female">Female</option>
+				<option value="not">Prefer not to say</option>
+			</select>
+		</div>
 
 
 
@@ -44,7 +71,7 @@
   		</div>
   		<div class="form-group">
     			<div class="col-sm-offset-2 col-sm-10">
-      			<button type="submit" class="btn btn-default">Submit</button>
+      			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     			</div>
   		</div>
 
